@@ -99,3 +99,11 @@ npx playwright install --with-deps
 🚦 **Visual & HTML Reporting**  
 🧪 **Test Design Coverage**  
 🚀 **CI/CD Ready**
+
+## 📋 Test Run - Report
+
+## 🎥 Video Recording
+https://www.loom.com/share/836e10d4cde944568e358d8ec85f7b17?sid=a48c022b-d0ed-41e8-a7a5-d1699713c238
+
+## 📸 Screenshots
+![Screenshot_1](https://github.com/user-attachments/assets/e59e7001-cb6e-40b5-af19-afe009b67052)
