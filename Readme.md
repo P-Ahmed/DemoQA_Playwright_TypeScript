@@ -1,78 +1,101 @@
-```markdown
-# Playwright UI Test Automation Framework
+<img src="https://playwright.dev/img/playwright-logo.svg" alt="Playwright Logo" width="120"/>
 
-## Overview
-Automated UI testing solution built with Playwright and TypeScript, demonstrating industry best practices including SOLID principles and maintainable code structure.
+# 🎭 Playwright + TypeScript UI Test Automation Framework
+
+A modern, scalable UI automation framework built with **Playwright** and **TypeScript**, implementing best industry practices, SOLID principles, and clean test architecture.
+
+---
 
 ## 🚀 Quick Start
 
-1. Clone repo:
-
-   ```bash
-   git clone https://github.com/your-username/your-repo.git && cd your-repo
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install && npx playwright install
-   ```
-
-3. Run tests:
-   ```bash
-   npx playwright test
-   ```
-
-## 📂 Project Structure
+```bash
+git clone https://github.com/P-Ahmed/DemoQA_Playwright_TypeScript.git
+cd DemoQA_Playwright_TypeScript
+npm install && npx playwright install
+npx playwright test
 ```
-├── src/
-│   ├── tests/
-│   │   │── fixtures
-│   │   ├── elements.spec.ts
-│   │   ├── forms.spec.ts
-│   │   └── widgets.spec.ts
-│   ├── pages/
-│   │   ├── basePage.ts
-│   │   ├── elementsPage.ts
-│   │   ├── formsPage.ts
-│   │   └── widgetsPage.ts
-│   └── utils/
-│       └── helper.ts
+
+---
+
+## 🧠 Key Test Design Techniques
+
+✅ **Equivalence Partitioning** (e.g., email validation)  
+✅ **Boundary Value Analysis** (e.g., progress bar: 0%, 50%, 100%)  
+✅ **State Transition Testing** (e.g., start → progress → complete)  
+✅ **Error Guessing** (e.g., form validations)  
+✅ **Positive & Negative Scenarios**  
+✅ **Data-Driven Testing**  
+✅ **Page Object Model (POM)**  
+✅ **Modular, Maintainable Design**
+
+---
+
+## 💡 SOLID Principles in Action
+
+- **S**ingle Responsibility: One page, one responsibility  
+- **O**pen/Closed: Extend pages/tests without modifying them  
+- **L**iskov Substitution: Common base for all pages  
+- **I**nterface Segregation: Lean, focused responsibilities  
+- **D**ependency Inversion: Tests depend on abstractions
+
+---
+
+## 🛠️ Best Practices Used
+
+- ✅ Page Object Model (POM)
+- ✅ Parallel & Cross-Browser Testing (Chrome, Firefox, Safari)
+- ✅ Auto-Waiting & Error Handling
+- ✅ Test Isolation & Atomic Design
+- ✅ Visual Proof (Screenshots & Videos on Failures)
+- ✅ HTML Reporting
+- ✅ CI-Friendly Environment Configurations
+
+---
+
+## 📁 Project Structure (Clean & Modular)
+
+```
+src/
+├── tests/        → Test specs
+├── pages/        → Page objects
+├── utils/        → Helpers & utilities
 ├── playwright.config.ts
 ├── tsconfig.json
 └── package.json
 ```
 
-## 🔧 Configuration
-Edit `playwright.config.ts` to:
-- Adjust timeouts
-- Configure browsers
+---
 
-## 🧪 Test Commands
+## 🧪 Common Test Commands
 
-| Command | Description |
-|---------|-------------|
-| `npx playwright test` | Run all tests |
-| `npx playwright test --headed` | Run in UI mode |
-| `npx playwright test npx playwright test src/tests/widgets.spec.ts` | Run specific tests |
-| `npx playwright show-report` | View HTML report |
+| Command                                       | Purpose                        |
+|----------------------------------------------|--------------------------------|
+| `npx playwright test`                         | Run all tests (headless)       |
+| `npx playwright test --headed`               | Run with browser UI            |
+| `npx playwright test src/tests/forms.spec.ts`| Run a specific test file       |
+| `npx playwright show-report`                 | View test report (HTML)        |
 
-## 🛠️ Technical Highlights
-
-✅ **SOLID Principles**  
-✅ **Page Object Model**  
-✅ **Parallel Execution**  
-✅ **Visual Testing**  
-✅ **CI/CD Ready**
+---
 
 ## 🐛 Troubleshooting
 
-**Issue**: Tests fail immediately  
-**Fix**: 
+**Problem:** Tests fail on startup  
+**Fix:**  
 ```bash
 npx playwright install --with-deps
 ```
 
-**Issue**: Element not found  
-**Fix**: 
-- Check selectors
-- Add wait conditions
+**Problem:** Element not found  
+**Fix:**  
+- Double-check selectors  
+- Add appropriate waits
+
+---
+
+## 📌 Highlights at a Glance
+
+✨ **TypeScript + Playwright**  
+🧱 **Modular & Scalable**  
+🚦 **Visual & HTML Reporting**  
+🧪 **Test Design Coverage**  
+🚀 **CI/CD Ready**
