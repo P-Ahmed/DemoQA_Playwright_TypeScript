@@ -96,7 +96,7 @@ npx playwright install --with-deps
 
 ✨ **TypeScript + Playwright**  
 🧱 **Modular & Scalable**  
-🚦   **Visual & HTML Reporting**  
+🚦 **Visual & HTML Reporting**  
 🧪 **Test Design Coverage**  
 🚀 **CI/CD Ready**
 
