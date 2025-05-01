@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",               // Modern JS features (Playwright supports latest JS)
+      "module": "commonjs",             // Playwright tests run in Node.js
+      "lib": ["esnext", "dom", "dom.iterable"], // DOM types for browser automation
+      "strict": true,                   // Strict type-checking (recommended)
+      "esModuleInterop": true,          // Better module compatibility
+      "skipLibCheck": true,             // Faster builds (optional)
+      "forceConsistentCasingInFileNames": true, // Avoid case-sensitivity bugs
+      "outDir": "./dist",               // Output directory (adjust if needed)
+      "rootDir": "./",                  // Or "./src" if you have a src folder
+      "moduleResolution": "node"        // Required for Node.js/Playwright
+    },
+    "include": ["**/*.ts"],             // Include all .ts files
+    "exclude": ["node_modules"]         // Exclude node_modules
+  }
